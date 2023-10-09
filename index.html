@@ -1,13 +1,66 @@
-  <!DOCTYPE html>
-  <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ramen toi</title>
-    <link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&family=Source+Sans+3:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    
-  </body>
-  </html>
+ <!-- Cette ligne déclare la version HTML du document. -->
+<!DOCTYPE html>
+
+<!-- Cette balise <html> est l'élément racine du document HTML.
+     L'attribut "lang" indique la langue du document, qui est l'anglais. -->
+<html lang="en">
+
+<head>
+  <!-- La balise <head> contient les métadonnées du document, comme les informations sur la page et les liens vers les ressources externes. -->
+
+  <!-- Cette balise <meta> définit l'encodage des caractères du document à UTF-8, 
+       qui est une norme courante pour la gestion des caractères spéciaux. -->
+  <meta charset="UTF-8">
+
+  <!-- Cette balise <meta> définit la manière dont la page sera affichée sur les appareils.
+       "width=device-width" signifie que la largeur de la page s'ajustera automatiquement à la largeur de l'appareil.
+       "initial-scale=1.0" définit le niveau initial de zoom. -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Cette balise <title> définit le titre de la page, qui sera affiché dans l'onglet du navigateur. -->
+  <title>Ramen Toi</title>
+
+  <!-- Cette balise <link> importe des polices de caractères Google Fonts à utiliser sur la page.
+       "family" spécifie les familles de polices à importer. -->
+  <link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&family=Source+Sans+3:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <!-- Cette balise <link> importe une feuille de style externe nommée "style.css" pour appliquer des styles à la page. -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- La balise <body> contient le contenu principal de la page web. -->
+
+  <!-- La balise <header> définit l'en-tête de la page, qui peut contenir le logo et la navigation. -->
+  <header class="header">
+    <!-- La classe "topbar" est utilisée pour la barre supérieure de l'en-tête. -->
+    <div class="topbar">
+      <!-- La classe "logo" est utilisée pour le logo de la page.
+           La balise <a> crée un lien vers la page d'accueil. -->
+      <div class="logo">
+        <a href="/index.html">Ramen Toi</a>
+      </div>
+      <!-- La balise <nav> crée une section de navigation. -->
+      <nav class="menu">
+        <!-- Les balises <a> créent des liens vers différentes pages du site. -->
+        <a href="/about.html" class="menu-item">A propos</a>
+        <a href="/menu.html" class="menu-item">Menu</a>
+        <a href="/recipes.html" class="menu-item">Recette</a>
+        <a href="/contact.html" class="menu-item">Contact</a>
+        <!-- La classe "menu-button" est utilisée pour un bouton de réservation spécifique. -->
+        <a href="/reserver.html" class="menu-item menu-button">Réserver</a>
+      </nav>
+    </div>
+    <!-- La classe "baseline" est utilisée pour une section avec un texte d'accueil. -->
+    <div class="baseline">
+      <!-- La classe "baseline-welcome" est utilisée pour un texte de bienvenue. -->
+      <span class="baseline-welcome">Welcome</span>
+      <!-- La classe "baseline-name" est utilisée pour le nom du restaurant. -->
+      <strong class="baseline-name">Ramen Toi</strong>
+      <!-- La classe "baseline-slogan" est utilisée pour un slogan du restaurant. -->
+      <span class="baseline-slogan">RAMEN ARDECHOIS</span>
+    </div>
+  </header>
+</body>
+
+</html>
