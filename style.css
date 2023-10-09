@@ -1,0 +1,280 @@
+*,*::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Source Sans 3', sans-serif;
+  line-height: 1.625;
+  margin: 0;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: color .3s;
+}
+
+.header {
+  background:
+  linear-gradient(180deg, rgba(0, 0, 0, 0.92), rgba(54, 54, 54, 0.5) 39.24%, rgba(28, 28, 28, 0.4)), 
+  url(img/stephan-bedase.jpg) center center / cover no-repeat;
+  color: #FFF;
+}
+
+.topbar {
+  padding: 18px 20px;
+  font-size: .875rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.menu-item:hover {
+  color: #c89446;
+}
+
+.logo {
+  margin-bottom: 15px;
+}
+
+.menu-item {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+.baseline {
+  padding: 50px 0 70px 0;
+  text-align: center;
+}
+
+.baseline-welcome {
+  font-family: 'Pinyon Script', serif;
+  color: #c89446;
+  font-size: 2.2rem;
+  display: block;
+  line-height: 1;
+}
+
+.baseline-name {
+  font-size: 2.5rem;
+  line-height: 1;
+  font-weight: 700;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+  display: block;
+}
+
+.baseline-slogan {
+  font-size: 1rem;
+  font-weight: 300;
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.menu-button {
+  border: solid 1px #c89446;
+  padding: 8px 10px;
+  transition-property: color, background-color;
+  margin-top: 5px;
+}
+
+.menu-button:hover {
+  background: #C89446;
+  color: #FFF;
+}
+
+
+
+/* Cette règle applique le modèle de boîte "border-box" à tous les éléments du document,
+ce qui signifie que la largeur et la hauteur incluent la bordure et le rembourrage. */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* Cette règle définit la taille de police de base pour le document HTML à 16 pixels. */
+html {
+  font-size: 16px;
+}
+
+/* Cette règle définit les styles de base pour le corps du document HTML.
+Elle spécifie la police de caractères, la hauteur de ligne et supprime les marges par défaut. */
+body {
+  font-family: 'Source Sans 3', sans-serif;
+  line-height: 1.625;
+  margin: 0;
+}
+
+/* Cette règle définit les styles de base pour les liens hypertexte.
+Elle conserve la couleur de texte héritée, supprime la soulignement par défaut,
+et ajoute une transition en douceur de la couleur lorsqu'un lien est survolé. */
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: color .3s;
+}
+
+/* Cette règle définit les styles pour la classe "header" utilisée pour l'en-tête du site.
+Elle crée un arrière-plan avec un dégradé et une image de fond centrée et en couverture (cover),
+et spécifie la couleur du texte en blanc. */
+.header {
+  background:
+  linear-gradient(180deg, rgba(0, 0, 0, 0.92), rgba(54, 54, 54, 0.5) 39.24%, rgba(28, 28, 28, 0.4)),
+  url(img/stephan-bedase.jpg) center center / cover no-repeat;
+  color: #FFF;
+}
+
+/* Cette règle définit les styles pour la classe "topbar" utilisée pour la barre supérieure du site.
+Elle spécifie la marge intérieure, la taille de police, la transformation en majuscules
+et l'alignement du texte au centre. */
+.topbar {
+  padding: 18px 20px;
+  font-size: .875rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* Cette règle définit les styles qui seront appliqués lorsqu'un élément avec la classe "menu-item"
+est survolé. Elle change la couleur du texte en "#c89446" lors du survol. */
+.menu-item:hover {
+  color: #c89446;
+}
+
+/* Cette règle définit les styles pour la classe "logo". Elle ajoute une marge inférieure de 15 pixels. */
+.logo {
+  margin-bottom: 15px;
+}
+
+/* Cette règle définit les styles pour les éléments du menu.
+Elle spécifie qu'ils doivent être affichés en ligne (côte à côte) et ajoute une marge à gauche et à droite. */
+.menu-item {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+/* Cette règle définit les styles pour la classe "baseline".
+Elle spécifie la marge intérieure et l'alignement du texte au centre. */
+.baseline {
+  padding: 50px 0 70px 0;
+  text-align: center;
+}
+
+/* Cette règle définit les styles pour la classe "baseline-welcome".
+Elle spécifie la police de caractères, la couleur du texte, la taille de police, etc. */
+.baseline-welcome {
+  font-family: 'Pinyon Script', serif;
+  color: #c89446;
+  font-size: 2.2rem;
+  display: block;
+  line-height: 1;
+}
+
+/* Cette règle définit les styles pour la classe "baseline-name".
+Elle spécifie la taille de police, la hauteur de ligne, le poids de la police, etc. */
+.baseline-name {
+  font-size: 2.5rem;
+  line-height: 1;
+  font-weight: 700;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+  display: block;
+}
+
+/* Cette règle définit les styles pour la classe "baseline-slogan".
+Elle spécifie la taille de police, le poids de la police, etc. */
+.baseline-slogan {
+  font-size: 1rem;
+  font-weight: 300;
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Cette règle définit les styles pour les boutons du menu.
+Elle spécifie une bordure solide, un rembourrage, une transition pour la couleur et une marge supérieure. */
+.menu-button {
+  border: solid 1px #c89446;
+  padding: 8px 10px;
+  transition-property: color, background-color;
+  margin-top: 5px;
+}
+
+/* Cette règle définit les styles qui seront appliqués lorsque les boutons du menu sont survolés.
+Elle change la couleur de l'arrière-plan en "#C89446" et la couleur du texte en blanc lors du survol. */
+.menu-button:hover {
+  background: #C89446;
+  color: #FFF;
+}
+
+/* La section "@media only screen and (min-width: 600px) { ... }" est une requête media
+qui cible les écrans dont la largeur minimale est de 600 pixels. */
+@media only screen and (min-width: 600px) {
+  /* À l'intérieur de cette requête media, il y a des ajustements de styles pour certains éléments
+  lorsque l'écran est large, comme la modification de la taille de police, la réorganisation d'éléments, etc. */
+  
+  /* Cette règle modifie la taille de police de base pour le document HTML à 16 pixels
+   lorsque la largeur de l'écran est d'au moins 600 pixels. */
+html {
+  font-size: 16px;
+}
+
+/* Cette règle modifie la taille de police pour les éléments ayant la classe "baseline-slogan"
+   à 1.5 rem (rem est une unité relative basée sur la taille de police de l'élément parent). */
+.baseline-slogan {
+  font-size: 1.5rem;
+}
+
+/* Cette règle modifie la propriété "padding-bottom" pour les éléments ayant la classe "logo",
+   en les réinitialisant à 0. */
+.logo {
+  padding-bottom: 0;
+}
+
+/* Cette règle modifie le style de la classe "topbar" lorsque l'écran est large.
+   Elle change son affichage en "flex" (affichage flexible) pour permettre un alignement vertical et horizontal
+   des éléments enfants. Elle définit également la largeur maximale à 1150 pixels
+   et centre le contenu horizontalement en le maintenant dans une marge automatique. */
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1150px;
+  margin: 0 auto;
+}
+
+/* Cette règle modifie la propriété "padding" de la classe "baseline" en ajustant la marge intérieure
+   lorsqu'elle est affichée sur un écran large. */
+.baseline {
+  padding: 136px 0 235px;
+}
+
+/* Cette règle modifie la taille de police, l'espacement des lettres et d'autres styles pour la classe "baseline-name"
+   lorsque l'écran est large. */
+.baseline-name {
+  font-size: 4.375rem;
+  letter-spacing: 12px;
+  padding-top: 8px;
+  padding-bottom: 16px;
+}
+
+/* Cette règle modifie la taille de police pour la classe "baseline-welcome"
+   lorsque l'écran est large. */
+.baseline-welcome {
+  font-size: 3.75rem;
+}
+
+/* Cette règle modifie les marges supérieure et droite pour la classe "menu-button"
+   en les réinitialisant à 0, et ajuste la bordure et le rembourrage du bouton
+   lorsqu'il est affiché sur un écran large. */
+.menu-button {
+  margin-top: 0;
+  margin-right: 0;
+  border: solid 1px #c89446;
+  padding: 8px 10px;
+}
+}
+
