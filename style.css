@@ -1,94 +1,3 @@
-*,*::before, *::after {
-  box-sizing: border-box;
-}
-
-html {
-  font-size: 16px;
-}
-
-body {
-  font-family: 'Source Sans 3', sans-serif;
-  line-height: 1.625;
-  margin: 0;
-}
-a {
-  color: inherit;
-  text-decoration: none;
-  transition: color .3s;
-}
-
-.header {
-  background:
-  linear-gradient(180deg, rgba(0, 0, 0, 0.92), rgba(54, 54, 54, 0.5) 39.24%, rgba(28, 28, 28, 0.4)), 
-  url(img/stephan-bedase.jpg) center center / cover no-repeat;
-  color: #FFF;
-}
-
-.topbar {
-  padding: 18px 20px;
-  font-size: .875rem;
-  text-transform: uppercase;
-  text-align: center;
-}
-
-.menu-item:hover {
-  color: #c89446;
-}
-
-.logo {
-  margin-bottom: 15px;
-}
-
-.menu-item {
-  display: inline-block;
-  margin: 0 15px;
-}
-
-.baseline {
-  padding: 50px 0 70px 0;
-  text-align: center;
-}
-
-.baseline-welcome {
-  font-family: 'Pinyon Script', serif;
-  color: #c89446;
-  font-size: 2.2rem;
-  display: block;
-  line-height: 1;
-}
-
-.baseline-name {
-  font-size: 2.5rem;
-  line-height: 1;
-  font-weight: 700;
-  letter-spacing: 5px;
-  text-transform: uppercase;
-  padding-bottom: 10px;
-  display: block;
-}
-
-.baseline-slogan {
-  font-size: 1rem;
-  font-weight: 300;
-  display: block;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-}
-
-.menu-button {
-  border: solid 1px #c89446;
-  padding: 8px 10px;
-  transition-property: color, background-color;
-  margin-top: 5px;
-}
-
-.menu-button:hover {
-  background: #C89446;
-  color: #FFF;
-}
-
-
-
 /* Cette règle applique le modèle de boîte "border-box" à tous les éléments du document,
 ce qui signifie que la largeur et la hauteur incluent la bordure et le rembourrage. */
 *, *::before, *::after {
@@ -106,6 +15,7 @@ body {
   font-family: 'Source Sans 3', sans-serif;
   line-height: 1.625;
   margin: 0;
+  color: #6f6f6f;
 }
 
 /* Cette règle définit les styles de base pour les liens hypertexte.
@@ -115,6 +25,11 @@ a {
   color: inherit;
   text-decoration: none;
   transition: color .3s;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 /* Cette règle définit les styles pour la classe "header" utilisée pour l'en-tête du site.
@@ -210,6 +125,120 @@ Elle change la couleur de l'arrière-plan en "#C89446" et la couleur du texte en
   color: #FFF;
 }
 
+
+
+
+/* Ajout de commentaires pour expliquer les règles CSS */
+
+/* Style de la section principale avec un espace de 9 pixels en haut */
+.home-section {
+  padding-top: 9px;
+}
+
+/* Style du conteneur avec une largeur maximale de 960px */
+.container-small {
+  margin: 0 auto; /* Centre le contenu horizontalement */
+  padding: 0 20px; /* Ajoute un espace de 20 pixels à gauche et à droite */
+  max-width: 960px; /* Limite la largeur maximale du conteneur */
+}
+
+/* Style du conteneur avec une largeur maximale de 1150px */
+.container {
+  margin: 0 auto; /* Centre le contenu horizontalement */
+  padding: 0 20px; /* Ajoute un espace de 20 pixels à gauche et à droite */
+  max-width: 1150px; /* Limite la largeur maximale du conteneur */
+}
+
+/* Style commun pour les blocs avec un espacement en bas de 50 pixels */
+.block {
+  margin-bottom: 50px;
+}
+
+/* Style du titre avec différentes propriétés de texte */
+.title {
+  font-size: 1.75rem; /* Taille de police */
+  line-height: 1.1; /* Hauteur de ligne */
+  letter-spacing: 2px; /* Espacement des lettres */
+  color: #000; /* Couleur du texte */
+  font-weight: bold; /* Poids de la police en gras */
+  text-transform: uppercase; /* Texte en majuscules */
+  margin: 1rem 0 0 0; /* Marge externe du titre */
+}
+
+/* Style du span à l'intérieur du titre */
+.title span {
+  font-family: 'Pinyon Script', serif; /* Police de caractères */
+  color: #C89446; /* Couleur du texte */
+  font-size: 2.5rem; /* Taille de police */
+  display:block; /* Affiche le span comme un bloc */
+  text-transform: none; /* Annule la transformation en majuscules */
+}
+
+/* Style de la ligne décorative avant le titre */
+.title::before {
+  content: ''; /* Ajoute un contenu avant le titre */
+  display: inline-block; /* Affiche en ligne, à côté du texte */
+  width: 24px; /* Largeur de la ligne */
+  height: 2px; /* Hauteur de la ligne */
+  background: #C89446; /* Couleur de fond de la ligne */
+  margin-bottom: .5rem; /* Marge en bas de la ligne */
+}
+
+/* Style du lien "Voir plus" */
+.more {
+  color: #C89446; /* Couleur du texte */
+}
+
+/* Style du lien "Voir plus" au survol de la souris */
+.more a:hover {
+  text-decoration: underline; /* Souligne le texte au survol */
+}
+
+/* Style de la flèche à côté du lien "Voir plus" */
+.more a::after {
+  content: ''; /* Ajoute un contenu après le lien */
+  display: inline-block; /* Affiche en ligne, à côté du texte */
+  width: 5px; /* Largeur de la flèche */
+  height: 9px; /* Hauteur de la flèche */
+  margin-left: .7em; /* Marge à gauche de la flèche */
+  background: url(img/arrow-right.svg) center center no-repeat; /* Image de la flèche */
+  transition: transform .3s; /* Animation de transformation */
+}
+
+/* Style de la flèche au survol de la souris */
+.more a:hover::after {
+  transform: translateX(3px); /* Déplace la flèche horizontalement au survol */
+}
+
+/* Style du bloc d'image */
+.block-img {
+  max-width: 350px; /* Largeur maximale de l'image */
+  margin: 0 auto; /* Centre l'image horizontalement */
+  border: solid 1px #C89446; /* Bordure autour de l'image */
+}
+
+/* Style de l'image à l'intérieur du bloc d'image */
+.block-img img {
+  display: block; /* Affiche l'image en tant que bloc */
+}
+
+/* Style supplémentaire pour l'image à l'intérieur du bloc d'image */
+.block-img img {
+  position: relative; /* Position relative par rapport à son conteneur */
+  z-index: 1; /* Indice de position z pour empiler les éléments */
+}
+
+
+
+
+
+
+
+
+
+
+
+
 /* La section "@media only screen and (min-width: 600px) { ... }" est une requête media
 qui cible les écrans dont la largeur minimale est de 600 pixels. */
 @media only screen and (min-width: 600px) {
@@ -276,5 +305,90 @@ html {
   border: solid 1px #c89446;
   padding: 8px 10px;
 }
+}
+
+
+
+/* Styles pour les écrans avec une largeur minimale de 960px */
+
+@media only screen and (min-width: 960px) {
+  /* Augmente la marge en bas des blocs à 100px */
+  .block {
+      margin-bottom: 100px;
+  }
+
+  /* Réduit la marge en bas du dernier bloc à 60px */
+  .block-last {
+      margin-bottom: 60px;
+  }
+
+  /* Aligne les blocs gauche et droit côte à côte avec de l'espace entre eux */
+  .block-left, .block-right {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+
+  /* Supprime la bordure autour de l'image à l'intérieur du bloc */
+  .block-img {
+      border: none;
+      position: relative;
+  }
+
+  /* Ajoute une bordure décorative autour de l'image */
+  .block-img::before {
+      content: '';
+      display: block;
+      border: solid 1px #C89446;
+      position: absolute;
+      top: -30px; /* Position au-dessus de l'image */
+      left: -30px; /* Position à gauche de l'image */
+      width: 100%;
+      height: 100%;
+      z-index: 0; /* Empile derrière l'image */
+  }
+
+  /* Déplace la bordure décorative à droite pour les blocs de droite */
+  .block-right .block-img::before {
+      left: auto;
+      right: -30px; /* Position à droite de l'image */
+  }
+
+  /* Ajuste la marge à gauche de l'image pour les blocs de gauche */
+  .block-left .block-img {
+      margin-left: 30px; /* Ajoute une marge à gauche de l'image */
+  }
+
+  /* Ajuste la marge à droite de l'image pour les blocs de droite */
+  .block-right .block-img {
+      margin-right: 30px; /* Ajoute une marge à droite de l'image */
+  }
+
+  /* Ajuste la marge à gauche du corps de texte pour les blocs de gauche */
+  .block-left .block-body {
+      margin-left: 20px; /* Ajoute une marge à gauche du corps de texte */
+  }
+
+  /* Ajuste la marge à droite du corps de texte pour les blocs de droite */
+  .block-right .block-body {
+      margin-right: 20px; /* Ajoute une marge à droite du corps de texte */
+      order: -1; /* Inverse l'ordre des blocs de droite (texte d'abord, puis l'image) */
+  }
+
+  /* Ajuste la marge en bas du titre */
+  .title {
+      margin-bottom: 1.2rem;
+  }
+
+  /* Ajuste la marge en bas de la ligne décorative avant le titre */
+  .title::before {
+      margin-bottom: 10px;
+  }
+
+  /* Ajuste l'affichage du lien "Voir plus" en bloc avec une marge en haut */
+  .more {
+      display: block;
+      margin-top: 1.3rem;
+  }
 }
 
