@@ -1,5 +1,6 @@
 *,
-*::before, *::after {
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -26,9 +27,9 @@ img {
 }
 
 .header {
-  background: 
-      linear-gradient(180deg, rgba(0, 0, 0, 0.92), rgba(54, 54, 54, 0.5) 39.24%, rgba(28, 28, 28, 0.4)), 
-      url(/img/stephan-bedase.jpg) center center / cover no-repeat;
+  background:
+    linear-gradient(180deg, rgba(0, 0, 0, 0.92), rgba(54, 54, 54, 0.5) 39.24%, rgba(28, 28, 28, 0.4)),
+    url(/img/stephan-bedase.jpg) center center / cover no-repeat;
   color: #FFF;
 }
 
@@ -54,7 +55,7 @@ img {
 
 .baseline {
   padding: 50px 0 70px 0;
-  text-align:center;
+  text-align: center;
   line-height: 1;
 }
 
@@ -83,7 +84,7 @@ img {
 }
 
 .menu-button {
-  border: solid 1px #C89446; 
+  border: solid 1px #C89446;
   padding: 7px 10px;
   transition-property: color, background-color;
   margin-top: 5px;
@@ -128,7 +129,7 @@ img {
   font-family: 'Pinyon Script', serif;
   color: #C89446;
   font-size: 2.5rem;
-  display:block;
+  display: block;
   text-transform: none;
 }
 
@@ -216,7 +217,8 @@ img {
   transition: .3s;
 }
 
-.ingredients-menu .active::after, .ingredients-menu a:hover::after {
+.ingredients-menu .active::after,
+.ingredients-menu a:hover::after {
   bottom: 0;
   opacity: 1;
 }
@@ -255,25 +257,25 @@ img {
   line-height: 1;
 }
 
-  /*footer*/
+/*footer*/
 
-  .footer {
-    background: #383838;
-    font-weight: 300;
-    color: #FFF;
-    padding: 40px 0;
-  }
-  
-  .footer-title {
-    color: #C89446;
-    font-weight: bold;
-    text-transform: uppercase;
-    margin-bottom: 1.25em;
-  }
-  
-  .footer-column {
-    margin-bottom: 2rem;
-  }
+.footer {
+  background: #383838;
+  font-weight: 300;
+  color: #FFF;
+  padding: 40px 0;
+}
+
+.footer-title {
+  color: #C89446;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 1.25em;
+}
+
+.footer-column {
+  margin-bottom: 2rem;
+}
 
 
 
@@ -285,155 +287,159 @@ img {
 
 @media only screen and (min-width: 600px) {
   html {
-      font-size: 16px;
+    font-size: 16px;
   }
+
   .logo {
-      margin-bottom: 0;
+    margin-bottom: 0;
   }
+
   .topbar {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      max-width: 1150px;
-      margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1150px;
+    margin: 0 auto;
   }
+
   .baseline {
-      padding: 125px 0 230px;
+    padding: 125px 0 230px;
   }
+
   .baseline-slogan {
-      font-size: 1.5rem;
+    font-size: 1.5rem;
   }
+
   .baseline-name {
-      font-size: 4.375rem;
-      letter-spacing: 12px;
-      padding-top: 8px;
-      padding-bottom: 18px;
+    font-size: 4.375rem;
+    letter-spacing: 12px;
+    padding-top: 8px;
+    padding-bottom: 18px;
   }
+
   .baseline-welcome {
-      font-size: 3.75rem;
+    font-size: 3.75rem;
   }
+
   .menu-button {
-      margin-top: 0;
-      margin-right: 0;
+    margin-top: 0;
+    margin-right: 0;
   }
 }
 
 
 
 @media only screen and (min-width: 960px) {
- 
+
 
 
   .block-img {
-      border: none;
-      position: relative;
+    border: none;
+    position: relative;
   }
 
- 
-
-  
-
-  
 
 
 
- 
 
-  
+
+
+
+
+
+
+
 
   .more {
-      display: block;
-      margin-top: 1.3rem;
+    display: block;
+    margin-top: 1.3rem;
   }
 
   .home-section {
-    background: 
-        fixed top 95px right 0px url(/img/oranges.jpg) no-repeat,
-        fixed top 640px left 0px url(/img/spices.jpg) no-repeat;
+    background:
+      fixed top 95px right 0px url(/img/oranges.jpg) no-repeat,
+      fixed top 640px left 0px url(/img/spices.jpg) no-repeat;
+  }
+
+
+
+
+
+  .block-chief {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0px;
+  }
+
+  .block-chief .block-img::before {
+    display: none;
+  }
+
+  .block-chief .block-img {
+    flex: none;
+    width: 404px;
+    order: 2;
+  }
+
+
+
+
+
+
+
+
+
+
+
+  .footer {
+    background-image: url(/img/splash.png);
+  }
+
+  .footer-columns {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footer-column {
+    width: 290px;
+    margin-right: 50px;
+  }
+
+  .footer-column:first-child {
+    width: 450px;
+  }
+
+  .footer-column:last-child {
+    margin-right: 0;
+    flex: none;
+  }
+
+  .footer a {
+    text-decoration: underline;
+  }
+
+  .footer a:hover {
+    color: #C89446;
+  }
+
+  .footer ul {
+    padding-left: 0;
+    list-style: none;
+  }
+
+  .footer ul li::before {
+    content: '- ';
+  }
+
+  .footer-credits {
+    font-size: 0.93em;
+  }
+
+  .footer-credits span {
+    font-weight: bold;
+  }
+
 }
-
-
-
-
-
-.block-chief {
-  display: flex;
-  align-items: center;
-  margin-bottom: 0px;
-}
-
-.block-chief .block-img::before {
-  display: none;
-}
-
-.block-chief .block-img {
-  flex: none;
-  width: 404px;
-  order: 2;
-}
-
-
-
-
-
-
-
-
-
-
-
-.footer {
-  background-image: url(/img/splash.png);
-}
-
-.footer-columns {
-  display: flex;
-  justify-content: space-between;
-}
-
-.footer-column {
-  width: 290px;
-  margin-right: 50px;
-}
-
-.footer-column:first-child {
-  width: 450px;
-}
-
-.footer-column:last-child {
-  margin-right: 0;
-  flex: none; 
-}
-
-.footer a {
-  text-decoration: underline;
-}
-
-.footer a:hover {
-  color: #C89446;
-}
-
-.footer ul {
-  padding-left: 0;
-  list-style: none;
-}
-
-.footer ul li::before {
-  content: '- ';
-}
-
-.footer-credits {
-  font-size: 0.93em;
-}
-
-.footer-credits span {
-  font-weight: bold;
-}
-
-}
-
-
-
 
 
 
