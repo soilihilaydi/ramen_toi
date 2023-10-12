@@ -273,6 +273,86 @@ Elle change la couleur de l'arrière-plan en "#C89446" et la couleur du texte en
 
 
 
+
+
+.reservation {
+  background: 
+      linear-gradient(180deg, rgba(0, 0, 0, 0.92), rgba(54, 54, 54, 0.5) 39.24%, rgba(28, 28, 28, 0.4)), 
+      url(/img/reservation.jpg) center center / cover no-repeat;
+  color: rgba(255, 255, 255, 0.6);
+  padding: 50px 0;
+}
+
+.reservation .title {
+  color: #FFF;
+}
+
+.reservation input, .reservation select {
+  padding: 0 0.5rem;
+  width: 100%;
+  margin-bottom: 15px;
+  border: solid 1px #6F6F6F;
+  background: transparent;
+  text-transform: uppercase;
+  height: 40px;
+  font-size: 0.875rem;
+  color: #FFF;
+  font-family: 'Source Sans Pro', serif;
+  transition: background-color .3s, border-color .3s;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  border-radius: 2px;
+}
+
+.reservation select {
+  background: no-repeat right 0.5rem center url(/img/select.svg);
+}
+
+.reservation input:focus, .reservation select:focus{
+  background-color: rgba(255,255,255, .1);
+  border-color: #C89446;
+}
+
+.reservation .button {
+  width: 100%;
+}
+
+.button {
+  font-weight: 600;
+  font-size: 0.875rem;
+  color: #FFF;
+  background: #C89446;
+  border: none;
+  border: solid 1px transparent;
+  padding: 11px 1rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.button:hover {
+  border: solid 1px #C89446;
+  background: transparent;
+}
+
+.reservation p {
+  max-width: 625px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.reservation .block-centered .block-body {
+  max-width: 825px;
+}
+
+select option {
+  color: #000;
+}
+
+
+
+
 /*footer*/
 
 .footer {
@@ -381,94 +461,30 @@ qui cible les écrans dont la largeur minimale est de 600 pixels. */
 
 @media only screen and (min-width: 960px) {
 
-  /* Augmente la marge en bas des blocs à 100px */
-  .block {
-    margin-bottom: 100px;
-  }
+  
 
-  /* Réduit la marge en bas du dernier bloc à 60px */
-  .block-last {
-    margin-bottom: 60px;
-  }
 
-  /* Aligne les blocs gauche et droit côte à côte avec de l'espace entre eux */
-  .block-left,
-  .block-right {
+
+
+
+  .reservation {
+    padding: 100px 0;
+}
+
+.reservation-form-row {
+    margin: 64px 0;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-  }
+}
 
-  /* Supprime la bordure autour de l'image à l'intérieur du bloc */
-  .block-img {
-    border: none;
-    position: relative;
-  }
+.reservation-form-row input, .reservation-form-row select {
+    width: calc(33.33% - 20px);
+    margin-bottom: 0;
+}
 
-  /* Ajoute une bordure décorative autour de l'image */
-  .block-img::before {
-    content: '';
-    display: block;
-    border: solid 1px #C89446;
-    position: absolute;
-    top: -30px;
-    /* Position au-dessus de l'image */
-    left: -30px;
-    /* Position à gauche de l'image */
-    width: 100%;
-    height: 100%;
-    z-index: 0;
-    /* Empile derrière l'image */
-  }
-
-  /* Déplace la bordure décorative à droite pour les blocs de droite */
-  .block-right .block-img::before {
-    left: auto;
-    right: -30px;
-    /* Position à droite de l'image */
-  }
-
-  /* Ajuste la marge à gauche de l'image pour les blocs de gauche */
-  .block-left .block-img {
-    margin-left: 30px;
-    /* Ajoute une marge à gauche de l'image */
-  }
-
-  /* Ajuste la marge à droite de l'image pour les blocs de droite */
-  .block-right .block-img {
-    margin-right: 30px;
-    /* Ajoute une marge à droite de l'image */
-  }
-
-  /* Ajuste la marge à gauche du corps de texte pour les blocs de gauche */
-  .block-left .block-body {
-    margin-left: 20px;
-    /* Ajoute une marge à gauche du corps de texte */
-  }
-
-  /* Ajuste la marge à droite du corps de texte pour les blocs de droite */
-  .block-right .block-body {
-    margin-right: 20px;
-    /* Ajoute une marge à droite du corps de texte */
-    order: -1;
-    /* Inverse l'ordre des blocs de droite (texte d'abord, puis l'image) */
-  }
-
-  /* Ajuste la marge en bas du titre */
-  .title {
-    margin-bottom: 1.2rem;
-  }
-
-  /* Ajuste la marge en bas de la ligne décorative avant le titre */
-  .title::before {
-    margin-bottom: 10px;
-  }
-
-  /* Ajuste l'affichage du lien "Voir plus" en bloc avec une marge en haut */
-  .more {
-    display: block;
-    margin-top: 1.3rem;
-  }
+.reservation .button {
+    width: calc(33.33% - 20px);
+}
 
   
 
