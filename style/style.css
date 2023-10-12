@@ -294,19 +294,6 @@ Elle change la couleur de l'arrière-plan en "#C89446" et la couleur du texte en
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* La section "@media only screen and (min-width: 600px) { ... }" est une requête media
 qui cible les écrans dont la largeur minimale est de 600 pixels. */
 @media only screen and (min-width: 600px) {
@@ -471,69 +458,64 @@ qui cible les écrans dont la largeur minimale est de 600 pixels. */
   }
 
   .home-section {
-    background: 
-        fixed top 95px right 0px url(/img/oranges.jpg) no-repeat,
-        fixed top 640px left 0px url(/img/spices.jpg) no-repeat;
-}
+    background:
+      fixed top 95px right 0px url(/img/oranges.jpg) no-repeat,
+      fixed top 640px left 0px url(/img/spices.jpg) no-repeat;
+  }
 
-  
+
 
   /*footer*/
 
 
 
-.footer {
-  background-image: url(/img/splash.png);
+  .footer {
+    background-image: url(/img/splash.png);
+  }
+
+  .footer-columns {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footer-column {
+    width: 290px;
+    margin-right: 50px;
+  }
+
+  .footer-column:first-child {
+    width: 450px;
+  }
+
+  .footer-column:last-child {
+    margin-right: 0;
+    flex: none;
+  }
+
+  .footer a {
+    text-decoration: underline;
+  }
+
+  .footer a:hover {
+    color: #C89446;
+  }
+
+  .footer ul {
+    padding-left: 0;
+    list-style: none;
+  }
+
+  .footer ul li::before {
+    content: '- ';
+  }
+
+  .footer-credits {
+    font-size: 0.93em;
+  }
+
+  .footer-credits span {
+    font-weight: bold;
+  }
+
+
 }
-
-.footer-columns {
-  display: flex;
-  justify-content: space-between;
-}
-
-.footer-column {
-  width: 290px;
-  margin-right: 50px;
-}
-
-.footer-column:first-child {
-  width: 450px;
-}
-
-.footer-column:last-child {
-  margin-right: 0;
-  flex: none; 
-}
-
-.footer a {
-  text-decoration: underline;
-}
-
-.footer a:hover {
-  color: #C89446;
-}
-
-.footer ul {
-  padding-left: 0;
-  list-style: none;
-}
-
-.footer ul li::before {
-  content: '- ';
-}
-
-.footer-credits {
-  font-size: 0.93em;
-}
-
-.footer-credits span {
-  font-weight: bold;
-}
-
-
-}
-
-
-
-
-
