@@ -470,6 +470,12 @@ qui cible les écrans dont la largeur minimale est de 600 pixels. */
     margin-top: 1.3rem;
   }
 
+  .home-section {
+    background: 
+        fixed top 95px right 0px url(/img/oranges.jpg) no-repeat,
+        fixed top 640px left 0px url(/img/spices.jpg) no-repeat;
+}
+
   
 
   /*footer*/
