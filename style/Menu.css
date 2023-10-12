@@ -1,28 +1,21 @@
-/* Cette règle applique le modèle de boîte "border-box" à tous les éléments du document,
-ce qui signifie que la largeur et la hauteur incluent la bordure et le rembourrage. */
+ 
+
 *,
-*::before,
-*::after {
+*::before, *::after {
   box-sizing: border-box;
 }
 
-/* Cette règle définit la taille de police de base pour le document HTML à 16 pixels. */
 html {
   font-size: 16px;
 }
 
-/* Cette règle définit les styles de base pour le corps du document HTML.
-Elle spécifie la police de caractères, la hauteur de ligne et supprime les marges par défaut. */
 body {
-  font-family: 'Source Sans 3', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   line-height: 1.625;
   margin: 0;
-  color: #6f6f6f;
+  color: #6F6F6F;
 }
 
-/* Cette règle définit les styles de base pour les liens hypertexte.
-Elle conserve la couleur de texte héritée, supprime la soulignement par défaut,
-et ajoute une transition en douceur de la couleur lorsqu'un lien est survolé. */
 a {
   color: inherit;
   text-decoration: none;
@@ -34,19 +27,13 @@ img {
   height: auto;
 }
 
-/* Cette règle définit les styles pour la classe "header" utilisée pour l'en-tête du site.
-Elle crée un arrière-plan avec un dégradé et une image de fond centrée et en couverture (cover),
-et spécifie la couleur du texte en blanc. */
 .header {
-  background:
-    linear-gradient(180deg, rgba(0, 0, 0, 0.92), rgba(54, 54, 54, 0.5) 39.24%, rgba(28, 28, 28, 0.4)),
-    url(/img/stephan-bedase.jpg) center center / cover no-repeat;
+  background: 
+      linear-gradient(180deg, rgba(0, 0, 0, 0.92), rgba(54, 54, 54, 0.5) 39.24%, rgba(28, 28, 28, 0.4)), 
+      url(/img/stephan-bedase.jpg) center center / cover no-repeat;
   color: #FFF;
 }
 
-/* Cette règle définit les styles pour la classe "topbar" utilisée pour la barre supérieure du site.
-Elle spécifie la marge intérieure, la taille de police, la transformation en majuscules
-et l'alignement du texte au centre. */
 .topbar {
   padding: 18px 20px;
   font-size: .875rem;
@@ -54,55 +41,41 @@ et l'alignement du texte au centre. */
   text-align: center;
 }
 
-/* Cette règle définit les styles qui seront appliqués lorsqu'un élément avec la classe "menu-item"
-est survolé. Elle change la couleur du texte en "#c89446" lors du survol. */
 .menu-item:hover {
-  color: #c89446;
+  color: #C89446;
 }
 
-/* Cette règle définit les styles pour la classe "logo". Elle ajoute une marge inférieure de 15 pixels. */
 .logo {
   margin-bottom: 15px;
 }
 
-/* Cette règle définit les styles pour les éléments du menu.
-Elle spécifie qu'ils doivent être affichés en ligne (côte à côte) et ajoute une marge à gauche et à droite. */
 .menu-item {
   display: inline-block;
   margin: 0 15px;
 }
 
-/* Cette règle définit les styles pour la classe "baseline".
-Elle spécifie la marge intérieure et l'alignement du texte au centre. */
 .baseline {
   padding: 50px 0 70px 0;
-  text-align: center;
+  text-align:center;
+  line-height: 1;
 }
 
-/* Cette règle définit les styles pour la classe "baseline-welcome".
-Elle spécifie la police de caractères, la couleur du texte, la taille de police, etc. */
 .baseline-welcome {
   font-family: 'Pinyon Script', serif;
-  color: #c89446;
-  font-size: 2.2rem;
+  color: #C89446;
   display: block;
-  line-height: 1;
+  font-size: 2.2rem;
 }
 
-/* Cette règle définit les styles pour la classe "baseline-name".
-Elle spécifie la taille de police, la hauteur de ligne, le poids de la police, etc. */
 .baseline-name {
+  display: block;
   font-size: 2.5rem;
-  line-height: 1;
   font-weight: 700;
   letter-spacing: 5px;
-  text-transform: uppercase;
   padding-bottom: 10px;
-  display: block;
+  text-transform: uppercase;
 }
 
-/* Cette règle définit les styles pour la classe "baseline-slogan".
-Elle spécifie la taille de police, le poids de la police, etc. */
 .baseline-slogan {
   font-size: 1rem;
   font-weight: 300;
@@ -111,370 +84,382 @@ Elle spécifie la taille de police, le poids de la police, etc. */
   letter-spacing: 2px;
 }
 
-/* Cette règle définit les styles pour les boutons du menu.
-Elle spécifie une bordure solide, un rembourrage, une transition pour la couleur et une marge supérieure. */
 .menu-button {
-  border: solid 1px #c89446;
-  padding: 8px 10px;
+  border: solid 1px #C89446; 
+  padding: 7px 10px;
   transition-property: color, background-color;
   margin-top: 5px;
 }
 
-/* Cette règle définit les styles qui seront appliqués lorsque les boutons du menu sont survolés.
-Elle change la couleur de l'arrière-plan en "#C89446" et la couleur du texte en blanc lors du survol. */
 .menu-button:hover {
   background: #C89446;
   color: #FFF;
 }
 
-
-
-
-/* Ajout de commentaires pour expliquer les règles CSS du body */
-
-/* Style de la section principale avec un espace de 9 pixels en haut */
 .home-section {
   padding-top: 9px;
 }
 
-/* Style du conteneur avec une largeur maximale de 960px */
 .container-small {
   margin: 0 auto;
-  /* Centre le contenu horizontalement */
   padding: 0 20px;
-  /* Ajoute un espace de 20 pixels à gauche et à droite */
   max-width: 960px;
-  /* Limite la largeur maximale du conteneur */
 }
 
-/* Style du conteneur avec une largeur maximale de 1150px */
 .container {
   margin: 0 auto;
-  /* Centre le contenu horizontalement */
   padding: 0 20px;
-  /* Ajoute un espace de 20 pixels à gauche et à droite */
   max-width: 1150px;
-  /* Limite la largeur maximale du conteneur */
 }
 
-/* Style commun pour les blocs avec un espacement en bas de 50 pixels */
 .block {
   margin-bottom: 50px;
 }
 
-/* Style du titre avec différentes propriétés de texte */
 .title {
   font-size: 1.75rem;
-  /* Taille de police */
   line-height: 1.1;
-  /* Hauteur de ligne */
   letter-spacing: 2px;
-  /* Espacement des lettres */
   color: #000;
-  /* Couleur du texte */
   font-weight: bold;
-  /* Poids de la police en gras */
   text-transform: uppercase;
-  /* Texte en majuscules */
   margin: 1rem 0 0 0;
-  /* Marge externe du titre */
 }
 
-/* Style du span à l'intérieur du titre */
 .title span {
   font-family: 'Pinyon Script', serif;
-  /* Police de caractères */
   color: #C89446;
-  /* Couleur du texte */
   font-size: 2.5rem;
-  /* Taille de police */
-  display: block;
-  /* Affiche le span comme un bloc */
+  display:block;
   text-transform: none;
-  /* Annule la transformation en majuscules */
 }
 
-/* Style de la ligne décorative avant le titre */
 .title::before {
   content: '';
-  /* Ajoute un contenu avant le titre */
   display: inline-block;
-  /* Affiche en ligne, à côté du texte */
   width: 24px;
-  /* Largeur de la ligne */
   height: 2px;
-  /* Hauteur de la ligne */
   background: #C89446;
-  /* Couleur de fond de la ligne */
   margin-bottom: .5rem;
-  /* Marge en bas de la ligne */
 }
 
-/* Style du lien "Voir plus" */
 .more {
   color: #C89446;
-  /* Couleur du texte */
 }
 
-/* Style du lien "Voir plus" au survol de la souris */
 .more a:hover {
   text-decoration: underline;
-  /* Souligne le texte au survol */
 }
 
-/* Style de la flèche à côté du lien "Voir plus" */
 .more a::after {
   content: '';
-  /* Ajoute un contenu après le lien */
   display: inline-block;
-  /* Affiche en ligne, à côté du texte */
   width: 5px;
-  /* Largeur de la flèche */
   height: 9px;
-  /* Hauteur de la flèche */
   margin-left: .7em;
-  /* Marge à gauche de la flèche */
-  background: url(/img/arrow-right.svg) center center no-repeat;
-  /* Image de la flèche */
+  background: url(img/arrow-right.svg) center center no-repeat;
   transition: transform .3s;
-  /* Animation de transformation */
 }
 
-/* Style de la flèche au survol de la souris */
 .more a:hover::after {
   transform: translateX(3px);
-  /* Déplace la flèche horizontalement au survol */
 }
 
-/* Style du bloc d'image */
 .block-img {
   max-width: 350px;
-  /* Largeur maximale de l'image */
   margin: 0 auto;
-  /* Centre l'image horizontalement */
   border: solid 1px #C89446;
-  /* Bordure autour de l'image */
 }
 
-/* Style de l'image à l'intérieur du bloc d'image */
 .block-img img {
   display: block;
-  /* Affiche l'image en tant que bloc */
 }
 
-/* Style supplémentaire pour l'image à l'intérieur du bloc d'image */
 .block-img img {
   position: relative;
-  /* Position relative par rapport à son conteneur */
   z-index: 1;
-  /* Indice de position z pour empiler les éléments */
 }
 
-
-
-
-/*footer*/
-
-.footer {
-  background: #383838;
-  font-weight: 300;
-  color: #FFF;
-  padding: 40px 0;
+.block-centered {
+  text-align: center;
 }
 
-.footer-title {
-  color: #C89446;
-  font-weight: bold;
+.block-centered .block-body {
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ingredients-menu {
+  margin: 40px 0;
+  font-weight: 600;
+  color: #383838;
+  text-align: center;
+  font-weight: 600;
   text-transform: uppercase;
-  margin-bottom: 1.25em;
 }
 
-.footer-column {
-  margin-bottom: 2rem;
+.ingredients-menu a {
+  display: inline-block;
+  margin: 0 5px;
+  position: relative;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* La section "@media only screen and (min-width: 600px) { ... }" est une requête media
-qui cible les écrans dont la largeur minimale est de 600 pixels. */
-@media only screen and (min-width: 600px) {
-  /* À l'intérieur de cette requête media, il y a des ajustements de styles pour certains éléments
-  lorsque l'écran est large, comme la modification de la taille de police, la réorganisation d'éléments, etc. */
-
-  /* Cette règle modifie la taille de police de base pour le document HTML à 16 pixels
-   lorsque la largeur de l'écran est d'au moins 600 pixels. */
-  html {
-    font-size: 16px;
-  }
-
-  /* Cette règle modifie la taille de police pour les éléments ayant la classe "baseline-slogan"
-   à 1.5 rem (rem est une unité relative basée sur la taille de police de l'élément parent). */
-  .baseline-slogan {
-    font-size: 1.5rem;
-  }
-
-  /* Cette règle modifie la propriété "padding-bottom" pour les éléments ayant la classe "logo",
-   en les réinitialisant à 0. */
-  .logo {
-    padding-bottom: 0;
-  }
-
-  /* Cette règle modifie le style de la classe "topbar" lorsque l'écran est large.
-   Elle change son affichage en "flex" (affichage flexible) pour permettre un alignement vertical et horizontal
-   des éléments enfants. Elle définit également la largeur maximale à 1150 pixels
-   et centre le contenu horizontalement en le maintenant dans une marge automatique. */
-  .topbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    max-width: 1150px;
-    margin: 0 auto;
-  }
-
-  /* Cette règle modifie la propriété "padding" de la classe "baseline" en ajustant la marge intérieure
-   lorsqu'elle est affichée sur un écran large. */
-  .baseline {
-    padding: 136px 0 235px;
-  }
-
-  /* Cette règle modifie la taille de police, l'espacement des lettres et d'autres styles pour la classe "baseline-name"
-   lorsque l'écran est large. */
-  .baseline-name {
-    font-size: 4.375rem;
-    letter-spacing: 12px;
-    padding-top: 8px;
-    padding-bottom: 16px;
-  }
-
-  /* Cette règle modifie la taille de police pour la classe "baseline-welcome"
-   lorsque l'écran est large. */
-  .baseline-welcome {
-    font-size: 3.75rem;
-  }
-
-  /* Cette règle modifie les marges supérieure et droite pour la classe "menu-button"
-   en les réinitialisant à 0, et ajuste la bordure et le rembourrage du bouton
-   lorsqu'il est affiché sur un écran large. */
-  .menu-button {
-    margin-top: 0;
-    margin-right: 0;
-    border: solid 1px #c89446;
-    padding: 8px 10px;
-  }
+.ingredients-menu a::after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  right: 0;
+  height: 1px;
+  opacity: 0;
+  background: #C89446;
+  transition: .3s;
 }
 
+.ingredients-menu .active::after, .ingredients-menu a:hover::after {
+  bottom: 0;
+  opacity: 1;
+}
 
+.menu-summary-item {
+  position: relative;
+  padding-left: 120px;
+  margin-bottom: 30px;
+}
 
-/* Styles pour les écrans avec une largeur minimale de 960px */
+.menu-summary-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100px;
+}
 
-@media only screen and (min-width: 960px) {
+.menu-summary-title {
+  font-size: 1.125rem;
+  color: #383838;
+  font-weight: bold;
+  padding-bottom: 0.75rem;
+  margin-bottom: 0;
+}
 
-  /* Augmente la marge en bas des blocs à 100px */
-  .block {
-    margin-bottom: 100px;
-  }
+.menu-summary p {
+  margin: 0;
+  padding-bottom: 1rem;
+  font-size: 0.875rem;
+}
 
-  /* Réduit la marge en bas du dernier bloc à 60px */
-  .block-last {
-    margin-bottom: 60px;
-  }
-
-  /* Aligne les blocs gauche et droit côte à côte avec de l'espace entre eux */
-  .block-left,
-  .block-right {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  /* Supprime la bordure autour de l'image à l'intérieur du bloc */
-  .block-img {
-    border: none;
-    position: relative;
-  }
-
-  /* Ajoute une bordure décorative autour de l'image */
-  .block-img::before {
-    content: '';
-    display: block;
-    border: solid 1px #C89446;
-    position: absolute;
-    top: -30px;
-    /* Position au-dessus de l'image */
-    left: -30px;
-    /* Position à gauche de l'image */
-    width: 100%;
-    height: 100%;
-    z-index: 0;
-    /* Empile derrière l'image */
-  }
-
-  /* Déplace la bordure décorative à droite pour les blocs de droite */
-  .block-right .block-img::before {
-    left: auto;
-    right: -30px;
-    /* Position à droite de l'image */
-  }
-
-  /* Ajuste la marge à gauche de l'image pour les blocs de gauche */
-  .block-left .block-img {
-    margin-left: 30px;
-    /* Ajoute une marge à gauche de l'image */
-  }
-
-  /* Ajuste la marge à droite de l'image pour les blocs de droite */
-  .block-right .block-img {
-    margin-right: 30px;
-    /* Ajoute une marge à droite de l'image */
-  }
-
-  /* Ajuste la marge à gauche du corps de texte pour les blocs de gauche */
-  .block-left .block-body {
-    margin-left: 20px;
-    /* Ajoute une marge à gauche du corps de texte */
-  }
-
-  /* Ajuste la marge à droite du corps de texte pour les blocs de droite */
-  .block-right .block-body {
-    margin-right: 20px;
-    /* Ajoute une marge à droite du corps de texte */
-    order: -1;
-    /* Inverse l'ordre des blocs de droite (texte d'abord, puis l'image) */
-  }
-
-  /* Ajuste la marge en bas du titre */
-  .title {
-    margin-bottom: 1.2rem;
-  }
-
-  /* Ajuste la marge en bas de la ligne décorative avant le titre */
-  .title::before {
-    margin-bottom: 10px;
-  }
-
-  /* Ajuste l'affichage du lien "Voir plus" en bloc avec une marge en haut */
-  .more {
-    display: block;
-    margin-top: 1.3rem;
-  }
-
-  
+.menu-summary-price {
+  font-family: 'Pinyon Script', serif;
+  color: #C89446;
+  font-size: 2.5rem;
+  line-height: 1;
+}
 
   /*footer*/
 
+  .footer {
+    background: #383838;
+    font-weight: 300;
+    color: #FFF;
+    padding: 40px 0;
+  }
+  
+  .footer-title {
+    color: #C89446;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 1.25em;
+  }
+  
+  .footer-column {
+    margin-bottom: 2rem;
+  }
 
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 600px) {
+  html {
+      font-size: 16px;
+  }
+  .logo {
+      margin-bottom: 0;
+  }
+  .topbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      max-width: 1150px;
+      margin: 0 auto;
+  }
+  .baseline {
+      padding: 125px 0 230px;
+  }
+  .baseline-slogan {
+      font-size: 1.5rem;
+  }
+  .baseline-name {
+      font-size: 4.375rem;
+      letter-spacing: 12px;
+      padding-top: 8px;
+      padding-bottom: 18px;
+  }
+  .baseline-welcome {
+      font-size: 3.75rem;
+  }
+  .menu-button {
+      margin-top: 0;
+      margin-right: 0;
+  }
+}
+
+
+
+@media only screen and (min-width: 960px) {
+  .block {
+      margin-bottom: 100px;
+  }
+
+  .block-last {
+      margin-bottom: 60px;
+  }
+
+
+  .block-img {
+      border: none;
+      position: relative;
+  }
+
+  .block-left .block-body, .block-right .block-body {
+      width: 445px;
+      flex: none;
+  }
+
+  .block-img::before {
+      content: '';
+      display: block;
+      border: solid 1px #C89446;
+      position: absolute;
+      top: -30px;
+      left: -30px; 
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+  }
+
+  .block-right .block-img::before {
+      left: auto;
+      right: -30px;
+  }
+
+  .block-left .block-img {
+      margin-left: 30px;
+  }
+
+  .block-right .block-img {
+      margin-right: 30px;
+  }
+
+  .block-left .block-body {
+      margin-left: 20px;
+  }
+
+  .block-right .block-body {
+      margin-right: 20px;
+      order: -1;
+  }
+
+  .title {
+      margin-bottom: 1.2rem;
+  }
+
+  .title::before {
+      margin-bottom: 10px;
+  }
+
+  .more {
+      display: block;
+      margin-top: 1.3rem;
+  }
+
+  .home-section {
+    background: 
+        fixed top 95px right 0px url(/img/oranges.jpg) no-repeat,
+        fixed top 640px left 0px url(/img/spices.jpg) no-repeat;
+}
+
+
+.ingredients-menu a {
+    margin: 0 32px;
+}
+
+.menu-summary {
+    position: relative;
+    padding: 85px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.menu-summary-item {
+    padding-left: 192px;
+    margin-bottom: 110px;
+    width: calc(50% - 40px);
+}
+
+.menu-summary .menu-summary-item:nth-child(even) {
+    text-align: right;
+    padding-left: 0;
+    padding-right:  192px;
+}
+
+.menu-summary .menu-summary-item:nth-child(even) .menu-summary-img {
+    left: auto;
+    right: 0;
+}
+
+.menu-summary .menu-summary-item:nth-child(even) .menu-summary-price {
+    margin-left: auto;
+}
+
+.menu-summary-img {
+    width: 160px;
+}
+
+.menu-summary-title {
+    margin-top: 0;
+    line-height: 1.2;
+    background: #FFF;
+}
+
+.menu-summary p {
+    background: #FFf;
+}
+
+.menu-summary-price {
+    padding-top: 4px;
+    width: 85px;
+    background: #FFF;
+}
+
+.menu-summary::before {
+    content:'';
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 50%;
+    width: 420px;
+    height: 420px;
+    border: solid 1px #C89446;
+    transform: translate(-50%, -260px) rotate(45deg);
+}
 
 .footer {
   background-image: url(/img/splash.png);
@@ -524,10 +509,6 @@ qui cible les écrans dont la largeur minimale est de 600 pixels. */
   font-weight: bold;
 }
 
-
 }
-
-
-
 
 
