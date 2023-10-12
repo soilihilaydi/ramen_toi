@@ -127,15 +127,12 @@ Elle change la couleur de l'arrière-plan en "#C89446" et la couleur du texte en
   color: #FFF;
 }
 
-
-
-
-/* Ajout de commentaires pour expliquer les règles CSS du body */
-
 /* Style de la section principale avec un espace de 9 pixels en haut */
 .home-section {
-  padding-top: 9px;
+  padding-top: 95px;
+  font-family: 'Source Sans 3', sans-serif;
 }
+
 
 /* Style du conteneur avec une largeur maximale de 960px */
 .container-small {
@@ -160,90 +157,6 @@ Elle change la couleur de l'arrière-plan en "#C89446" et la couleur du texte en
 /* Style commun pour les blocs avec un espacement en bas de 50 pixels */
 .block {
   margin-bottom: 50px;
-}
-
-/* Style du titre avec différentes propriétés de texte */
-.title {
-  font-size: 1.75rem;
-  /* Taille de police */
-  line-height: 1.1;
-  /* Hauteur de ligne */
-  letter-spacing: 2px;
-  /* Espacement des lettres */
-  color: #000;
-  /* Couleur du texte */
-  font-weight: bold;
-  /* Poids de la police en gras */
-  text-transform: uppercase;
-  /* Texte en majuscules */
-  margin: 1rem 0 0 0;
-  /* Marge externe du titre */
-}
-
-/* Style du span à l'intérieur du titre */
-.title span {
-  font-family: 'Pinyon Script', serif;
-  /* Police de caractères */
-  color: #C89446;
-  /* Couleur du texte */
-  font-size: 2.5rem;
-  /* Taille de police */
-  display: block;
-  /* Affiche le span comme un bloc */
-  text-transform: none;
-  /* Annule la transformation en majuscules */
-}
-
-/* Style de la ligne décorative avant le titre */
-.title::before {
-  content: '';
-  /* Ajoute un contenu avant le titre */
-  display: inline-block;
-  /* Affiche en ligne, à côté du texte */
-  width: 24px;
-  /* Largeur de la ligne */
-  height: 2px;
-  /* Hauteur de la ligne */
-  background: #C89446;
-  /* Couleur de fond de la ligne */
-  margin-bottom: .5rem;
-  /* Marge en bas de la ligne */
-}
-
-/* Style du lien "Voir plus" */
-.more {
-  color: #C89446;
-  /* Couleur du texte */
-}
-
-/* Style du lien "Voir plus" au survol de la souris */
-.more a:hover {
-  text-decoration: underline;
-  /* Souligne le texte au survol */
-}
-
-/* Style de la flèche à côté du lien "Voir plus" */
-.more a::after {
-  content: '';
-  /* Ajoute un contenu après le lien */
-  display: inline-block;
-  /* Affiche en ligne, à côté du texte */
-  width: 5px;
-  /* Largeur de la flèche */
-  height: 9px;
-  /* Hauteur de la flèche */
-  margin-left: .7em;
-  /* Marge à gauche de la flèche */
-  background: url(/img/arrow-right.svg) center center no-repeat;
-  /* Image de la flèche */
-  transition: transform .3s;
-  /* Animation de transformation */
-}
-
-/* Style de la flèche au survol de la souris */
-.more a:hover::after {
-  transform: translateX(3px);
-  /* Déplace la flèche horizontalement au survol */
 }
 
 /* Style du bloc d'image */
@@ -271,8 +184,6 @@ Elle change la couleur de l'arrière-plan en "#C89446" et la couleur du texte en
 }
 
 
-
-
 /*footer*/
 
 .footer {
@@ -294,22 +205,9 @@ Elle change la couleur de l'arrière-plan en "#C89446" et la couleur du texte en
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* La section "@media only screen and (min-width: 600px) { ... }" est une requête media
 qui cible les écrans dont la largeur minimale est de 600 pixels. */
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 300px) {
   /* À l'intérieur de cette requête media, il y a des ajustements de styles pour certains éléments
   lorsque l'écran est large, comme la modification de la taille de police, la réorganisation d'éléments, etc. */
 
@@ -373,6 +271,79 @@ qui cible les écrans dont la largeur minimale est de 600 pixels. */
     border: solid 1px #c89446;
     padding: 8px 10px;
   }
+
+  .contact-container {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 800px;
+  }
+  
+  .contact-container h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .contact-form {
+    text-align: left;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #333;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button {
+    background-color: #c89446;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    
+    
+  }
+  
+  button:hover {
+    background-color: #b97e3b;
+  }
+
+}
+
+.contact-form-row {
+  margin: 0;
+}
+
+.contact-form-row input[type="text"],
+.contact-form-row input[type="email"],
+.contact-form-row textarea {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.contact-form-row label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.contact-form .button {
+  width: 100%;
 }
 
 
@@ -382,92 +353,91 @@ qui cible les écrans dont la largeur minimale est de 600 pixels. */
 @media only screen and (min-width: 960px) {
 
   /* Augmente la marge en bas des blocs à 100px */
-  .block {
-    margin-bottom: 100px;
-  }
-
-  /* Réduit la marge en bas du dernier bloc à 60px */
-  .block-last {
-    margin-bottom: 60px;
-  }
-
-  /* Aligne les blocs gauche et droit côte à côte avec de l'espace entre eux */
-  .block-left,
-  .block-right {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  /* Supprime la bordure autour de l'image à l'intérieur du bloc */
-  .block-img {
-    border: none;
-    position: relative;
-  }
-
-  /* Ajoute une bordure décorative autour de l'image */
-  .block-img::before {
-    content: '';
-    display: block;
-    border: solid 1px #C89446;
-    position: absolute;
-    top: -30px;
-    /* Position au-dessus de l'image */
-    left: -30px;
-    /* Position à gauche de l'image */
-    width: 100%;
-    height: 100%;
-    z-index: 0;
-    /* Empile derrière l'image */
-  }
-
-  /* Déplace la bordure décorative à droite pour les blocs de droite */
-  .block-right .block-img::before {
-    left: auto;
-    right: -30px;
-    /* Position à droite de l'image */
-  }
-
-  /* Ajuste la marge à gauche de l'image pour les blocs de gauche */
-  .block-left .block-img {
-    margin-left: 30px;
-    /* Ajoute une marge à gauche de l'image */
-  }
-
-  /* Ajuste la marge à droite de l'image pour les blocs de droite */
-  .block-right .block-img {
-    margin-right: 30px;
-    /* Ajoute une marge à droite de l'image */
-  }
-
-  /* Ajuste la marge à gauche du corps de texte pour les blocs de gauche */
-  .block-left .block-body {
-    margin-left: 20px;
-    /* Ajoute une marge à gauche du corps de texte */
-  }
-
-  /* Ajuste la marge à droite du corps de texte pour les blocs de droite */
-  .block-right .block-body {
-    margin-right: 20px;
-    /* Ajoute une marge à droite du corps de texte */
-    order: -1;
-    /* Inverse l'ordre des blocs de droite (texte d'abord, puis l'image) */
-  }
-
-  /* Ajuste la marge en bas du titre */
-  .title {
-    margin-bottom: 1.2rem;
-  }
-
-  /* Ajuste la marge en bas de la ligne décorative avant le titre */
-  .title::before {
-    margin-bottom: 10px;
-  }
+ 
 
   /* Ajuste l'affichage du lien "Voir plus" en bloc avec une marge en haut */
   .more {
     display: block;
     margin-top: 1.3rem;
+  }
+
+
+  .home-section {
+    background:
+      fixed top 95px right 0px url(/img/oranges.jpg) no-repeat,
+      fixed top 640px left 0px url(/img/spices.jpg) no-repeat;
+      
+  }
+  .contact {
+    padding: 100px 0;
+  }
+
+  .contact-form-row {
+    margin: 64px 0;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .contact-form-row input,
+  .contact-form-row select {
+    width: calc(33.33% - 20px);
+    margin-bottom: 0;
+  }
+
+  .contact .button {
+    width: calc(33.33% - 20px);
+  }
+
+
+  .contact-container {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 800px;
+  }
+  
+  .contact-container h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .contact-form {
+    text-align: left;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #333;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button {
+    background-color: #c89446;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    
+  }
+  
+  button:hover {
+    background-color: #b97e3b;
   }
 
   
