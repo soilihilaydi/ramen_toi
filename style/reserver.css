@@ -128,8 +128,6 @@ Elle change la couleur de l'arrière-plan en "#C89446" et la couleur du texte en
 }
 
 
-
-
 /* Ajout de commentaires pour expliquer les règles CSS du body */
 
 /* Style de la section principale avec un espace de 9 pixels en haut */
@@ -312,7 +310,6 @@ select option {
 }
 
 
-/*footer*/
 
 .footer {
   background: #383838;

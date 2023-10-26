@@ -164,98 +164,9 @@ img {
   transform: translateX(3px);
 }
 
-.block-img {
-  max-width: 350px;
-  margin: 0 auto;
-  border: solid 1px #C89446;
-}
 
-.block-img img {
-  display: block;
-}
 
-.block-img img {
-  position: relative;
-  z-index: 1;
-}
 
-.block-centered {
-  text-align: center;
-}
-
-.block-centered .block-body {
-  max-width: 640px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.ingredients-menu {
-  margin: 40px 0;
-  font-weight: 600;
-  color: #383838;
-  text-align: center;
-  font-weight: 600;
-  text-transform: uppercase;
-}
-
-.ingredients-menu a {
-  display: inline-block;
-  margin: 0 5px;
-  position: relative;
-}
-
-.ingredients-menu a::after {
-  content: '';
-  display: block;
-  position: absolute;
-  bottom: 5px;
-  left: 0;
-  right: 0;
-  height: 1px;
-  opacity: 0;
-  background: #C89446;
-  transition: .3s;
-}
-
-.ingredients-menu .active::after,
-.ingredients-menu a:hover::after {
-  bottom: 0;
-  opacity: 1;
-}
-
-.menu-summary-item {
-  position: relative;
-  padding-left: 120px;
-  margin-bottom: 30px;
-}
-
-.menu-summary-img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100px;
-}
-
-.menu-summary-title {
-  font-size: 1.125rem;
-  color: #383838;
-  font-weight: bold;
-  padding-bottom: 0.75rem;
-  margin-bottom: 0;
-}
-
-.menu-summary p {
-  margin: 0;
-  padding-bottom: 1rem;
-  font-size: 0.875rem;
-}
-
-.menu-summary-price {
-  font-family: 'Pinyon Script', serif;
-  color: #C89446;
-  font-size: 2.5rem;
-  line-height: 1;
-}
 
 /*footer*/
 
@@ -276,13 +187,6 @@ img {
 .footer-column {
   margin-bottom: 2rem;
 }
-
-
-
-
-
-
-
 
 
 @media only screen and (min-width: 600px) {

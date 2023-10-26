@@ -159,30 +159,6 @@ Elle change la couleur de l'arrière-plan en "#C89446" et la couleur du texte en
   margin-bottom: 50px;
 }
 
-/* Style du bloc d'image */
-.block-img {
-  max-width: 350px;
-  /* Largeur maximale de l'image */
-  margin: 0 auto;
-  /* Centre l'image horizontalement */
-  border: solid 1px #C89446;
-  /* Bordure autour de l'image */
-}
-
-/* Style de l'image à l'intérieur du bloc d'image */
-.block-img img {
-  display: block;
-  /* Affiche l'image en tant que bloc */
-}
-
-/* Style supplémentaire pour l'image à l'intérieur du bloc d'image */
-.block-img img {
-  position: relative;
-  /* Position relative par rapport à son conteneur */
-  z-index: 1;
-  /* Indice de position z pour empiler les éléments */
-}
-
 
 /*footer*/
 
@@ -355,19 +331,10 @@ qui cible les écrans dont la largeur minimale est de 600 pixels. */
   /* Augmente la marge en bas des blocs à 100px */
  
 
-  /* Ajuste l'affichage du lien "Voir plus" en bloc avec une marge en haut */
-  .more {
-    display: block;
-    margin-top: 1.3rem;
-  }
+  
 
 
-  .home-section {
-    background:
-      fixed top 95px right 0px url(/img/oranges.jpg) no-repeat,
-      fixed top 640px left 0px url(/img/spices.jpg) no-repeat;
-      
-  }
+  
   .contact {
     padding: 100px 0;
   }
